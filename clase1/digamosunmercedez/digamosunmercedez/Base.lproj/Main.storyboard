@@ -105,7 +105,6 @@
                         <outlet property="imagen" destination="If2-rf-34v" id="xpd-E5-Yz7"/>
                         <outlet property="labelColor" destination="gaY-0x-Moe" id="bEs-vh-cw2"/>
                         <outlet property="labelMarca" destination="ddH-fA-RdI" id="zET-YP-tqw"/>
-                        <outlet property="marcaChange" destination="4qt-WF-LRI" id="A3r-Je-DRb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

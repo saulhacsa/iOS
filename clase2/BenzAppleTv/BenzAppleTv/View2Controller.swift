@@ -10,9 +10,12 @@ import UIKit
 
 class View2Controller: UIViewController {
 
+    
+    @IBOutlet weak var imagenV2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagenV2.image = #imageLiteral(resourceName: "splash.jpeg")
         // Do any additional setup after loading the view.
     }
 

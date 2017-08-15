@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
     @IBOutlet weak var imagenV1: UIImageView!
     
     @IBOutlet weak var colorLabel: UILabel!
@@ -27,7 +28,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-            imagenV1.layer.masksToBounds = true
+           // imagenV1.layer.masksToBounds = true
+        imagenV1.image = #imageLiteral(resourceName: "blue.jpeg")
     }
 
     override func didReceiveMemoryWarning() {

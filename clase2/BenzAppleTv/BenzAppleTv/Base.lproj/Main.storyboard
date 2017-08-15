@@ -34,7 +34,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Brand"/>
                                 <connections>
-                                    <action selector="getBranch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bve-hK-FjT"/>
+                                    <action selector="getBranch:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="zN1-dH-cSI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec0-sB-cX7">
@@ -43,7 +43,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Color"/>
                                 <connections>
-                                    <action selector="getColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QGX-r8-Vih"/>
+                                    <action selector="getColor:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="i20-PW-WTc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-0S-dU3">
@@ -62,7 +62,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="fGC-cL-SMk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CaM-ge-Fzz">
                                 <rect key="frame" x="515" y="770" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -72,7 +72,7 @@
                     <connections>
                         <outlet property="branchLabel" destination="KYb-e3-Nrp" id="qld-YO-FTm"/>
                         <outlet property="colorLabel" destination="ica-x4-lTo" id="Dy4-hO-VV0"/>
-                        <outlet property="imagenV1" destination="fGC-cL-SMk" id="QLC-DR-EUf"/>
+                        <outlet property="imagenV1" destination="CaM-ge-Fzz" id="s2l-UM-Ec6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,6 +105,9 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="imagenV2" destination="au8-q0-iTL" id="LtK-x9-5dc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVW-c8-jjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="blue" width="284" height="177"/>
         <image name="splash" width="318" height="159"/>
     </resources>
 </document>

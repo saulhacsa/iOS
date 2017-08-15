@@ -18,6 +18,7 @@ class SecondViewController: UIViewController {
     @IBAction func showAlert(_ sender: Any) {
         let alert = UIAlertController(title: "Alert", message: "Red button click", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil))
+        
         self.present(alert, animated: true, completion: nil)
     }
     

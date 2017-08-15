@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A2E4BB1F43AC3900084D6F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13A2E4BA1F43AC3900084D6F /* logo.png */; };
 		13D67A151F4376BD0038A51F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D67A141F4376BD0038A51F /* AppDelegate.swift */; };
 		13D67A171F4376BD0038A51F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D67A161F4376BD0038A51F /* FirstViewController.swift */; };
 		13D67A191F4376BD0038A51F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D67A181F4376BD0038A51F /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13A2E4BA1F43AC3900084D6F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		13D67A111F4376BD0038A51F /* TabBarUniversal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarUniversal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D67A141F4376BD0038A51F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13D67A161F4376BD0038A51F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13A2E4BC1F43AC4000084D6F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				13A2E4BA1F43AC3900084D6F /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		13D67A081F4376BD0038A51F = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 				13D67A1D1F4376BE0038A51F /* Assets.xcassets */,
 				13D67A1F1F4376BE0038A51F /* LaunchScreen.storyboard */,
 				13D67A221F4376BE0038A51F /* Info.plist */,
+				13A2E4BC1F43AC4000084D6F /* images */,
 			);
 			path = TabBarUniversal;
 			sourceTree = "<group>";
@@ -130,6 +141,7 @@
 				13D67A211F4376BE0038A51F /* LaunchScreen.storyboard in Resources */,
 				13D67A1E1F4376BE0038A51F /* Assets.xcassets in Resources */,
 				13D67A1C1F4376BD0038A51F /* Main.storyboard in Resources */,
+				13A2E4BB1F43AC3900084D6F /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +320,7 @@
 				13D67A271F4376BE0038A51F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

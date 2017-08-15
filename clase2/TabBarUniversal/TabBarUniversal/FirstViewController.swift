@@ -10,6 +10,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBAction func showAlertV1(_ sender: Any) {
+        let alert = UIAlertController(title: "Alert", message: "First View Over...", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13D679C31F4350700038A51F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D679C21F4350700038A51F /* AppDelegate.swift */; };
+		13D679C51F4350700038A51F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D679C41F4350700038A51F /* ViewController.swift */; };
+		13D679C81F4350700038A51F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D679C61F4350700038A51F /* Main.storyboard */; };
+		13D679CA1F4350700038A51F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D679C91F4350700038A51F /* Assets.xcassets */; };
+		13D679D21F4351100038A51F /* View2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D679D11F4351100038A51F /* View2Controller.swift */; };
+		13D679DA1F4353200038A51F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 13D679D91F4353200038A51F /* images */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13D679BF1F4350700038A51F /* BenzAppleTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzAppleTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D679C21F4350700038A51F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13D679C41F4350700038A51F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13D679C71F4350700038A51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13D679C91F4350700038A51F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13D679CB1F4350700038A51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13D679D11F4351100038A51F /* View2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2Controller.swift; sourceTree = "<group>"; };
+		13D679D91F4353200038A51F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13D679BC1F4350700038A51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D679B61F4350700038A51F = {
+			isa = PBXGroup;
+			children = (
+				13D679C11F4350700038A51F /* BenzAppleTv */,
+				13D679C01F4350700038A51F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13D679C01F4350700038A51F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13D679BF1F4350700038A51F /* BenzAppleTv.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13D679C11F4350700038A51F /* BenzAppleTv */ = {
+			isa = PBXGroup;
+			children = (
+				13D679C21F4350700038A51F /* AppDelegate.swift */,
+				13D679C41F4350700038A51F /* ViewController.swift */,
+				13D679D11F4351100038A51F /* View2Controller.swift */,
+				13D679C61F4350700038A51F /* Main.storyboard */,
+				13D679C91F4350700038A51F /* Assets.xcassets */,
+				13D679CB1F4350700038A51F /* Info.plist */,
+				13D679D91F4353200038A51F /* images */,
+			);
+			path = BenzAppleTv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13D679BE1F4350700038A51F /* BenzAppleTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13D679CE1F4350700038A51F /* Build configuration list for PBXNativeTarget "BenzAppleTv" */;
+			buildPhases = (
+				13D679BB1F4350700038A51F /* Sources */,
+				13D679BC1F4350700038A51F /* Frameworks */,
+				13D679BD1F4350700038A51F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenzAppleTv;
+			productName = BenzAppleTv;
+			productReference = 13D679BF1F4350700038A51F /* BenzAppleTv.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13D679B71F4350700038A51F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = HACSA;
+				TargetAttributes = {
+					13D679BE1F4350700038A51F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 55773242R5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 13D679BA1F4350700038A51F /* Build configuration list for PBXProject "BenzAppleTv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13D679B61F4350700038A51F;
+			productRefGroup = 13D679C01F4350700038A51F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13D679BE1F4350700038A51F /* BenzAppleTv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13D679BD1F4350700038A51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D679DA1F4353200038A51F /* images in Resources */,
+				13D679CA1F4350700038A51F /* Assets.xcassets in Resources */,
+				13D679C81F4350700038A51F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13D679BB1F4350700038A51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13D679C51F4350700038A51F /* ViewController.swift in Sources */,
+				13D679D21F4351100038A51F /* View2Controller.swift in Sources */,
+				13D679C31F4350700038A51F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		13D679C61F4350700038A51F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13D679C71F4350700038A51F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13D679CC1F4350700038A51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		13D679CD1F4350700038A51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13D679CF1F4350700038A51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 55773242R5;
+				INFOPLIST_FILE = BenzAppleTv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mxcom.caliente.BenzAppleTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		13D679D01F4350700038A51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 55773242R5;
+				INFOPLIST_FILE = BenzAppleTv/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mxcom.caliente.BenzAppleTv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13D679BA1F4350700038A51F /* Build configuration list for PBXProject "BenzAppleTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13D679CC1F4350700038A51F /* Debug */,
+				13D679CD1F4350700038A51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13D679CE1F4350700038A51F /* Build configuration list for PBXNativeTarget "BenzAppleTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13D679CF1F4350700038A51F /* Debug */,
+				13D679D01F4350700038A51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13D679B71F4350700038A51F /* Project object */;
+}

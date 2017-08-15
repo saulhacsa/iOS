@@ -15,9 +15,12 @@
 		13892A831F422EEE00BD3328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13892A821F422EEE00BD3328 /* Assets.xcassets */; };
 		13892A861F422EEE00BD3328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13892A841F422EEE00BD3328 /* LaunchScreen.storyboard */; };
 		13892A8E1F4231C100BD3328 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 13892A8D1F4231C100BD3328 /* images */; };
+		2330CC08648E7801FF77A3CE /* Pods_digamosunmercedez.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D53F07A51B6316AE7A2AE7 /* Pods_digamosunmercedez.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D53F07A51B6316AE7A2AE7 /* Pods_digamosunmercedez.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_digamosunmercedez.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0368596CB2AA46A89BCDDE12 /* Pods-digamosunmercedez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digamosunmercedez.debug.xcconfig"; path = "Pods/Target Support Files/Pods-digamosunmercedez/Pods-digamosunmercedez.debug.xcconfig"; sourceTree = "<group>"; };
 		1319000A1F42649500AF8695 /* notas.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = notas.rtf; sourceTree = "<group>"; };
 		133DC9591F427BD100450931 /* vistaNuevaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vistaNuevaViewController.swift; sourceTree = "<group>"; };
 		13892A781F422EEE00BD3328 /* digamosunmercedez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digamosunmercedez.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +31,7 @@
 		13892A851F422EEE00BD3328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13892A871F422EEE00BD3328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13892A8D1F4231C100BD3328 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = SOURCE_ROOT; };
+		8D364AD24312F7832339795E /* Pods-digamosunmercedez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digamosunmercedez.release.xcconfig"; path = "Pods/Target Support Files/Pods-digamosunmercedez/Pods-digamosunmercedez.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2330CC08648E7801FF77A3CE /* Pods_digamosunmercedez.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				13892A7A1F422EEE00BD3328 /* digamosunmercedez */,
 				13892A791F422EEE00BD3328 /* Products */,
+				B359F7C44E21F99291434EA7 /* Pods */,
+				AAC0672A0ECF44A98FB21CC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,23 @@
 			path = digamosunmercedez;
 			sourceTree = "<group>";
 		};
+		AAC0672A0ECF44A98FB21CC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D53F07A51B6316AE7A2AE7 /* Pods_digamosunmercedez.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B359F7C44E21F99291434EA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0368596CB2AA46A89BCDDE12 /* Pods-digamosunmercedez.debug.xcconfig */,
+				8D364AD24312F7832339795E /* Pods-digamosunmercedez.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13892A8A1F422EEE00BD3328 /* Build configuration list for PBXNativeTarget "digamosunmercedez" */;
 			buildPhases = (
+				1C7287DD0AA838949C59DB77 /* [CP] Check Pods Manifest.lock */,
 				13892A741F422EEE00BD3328 /* Sources */,
 				13892A751F422EEE00BD3328 /* Frameworks */,
 				13892A761F422EEE00BD3328 /* Resources */,
+				1C22E8509042B2826456585C /* [CP] Embed Pods Frameworks */,
+				D1B7A4175AAAAC7F2F6640BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C22E8509042B2826456585C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digamosunmercedez/Pods-digamosunmercedez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C7287DD0AA838949C59DB77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-digamosunmercedez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B7A4175AAAAC7F2F6640BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-digamosunmercedez/Pods-digamosunmercedez-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digamosunmercedez/Pods-digamosunmercedez-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13892A741F422EEE00BD3328 /* Sources */ = {
@@ -271,6 +352,7 @@
 		};
 		13892A8B1F422EEE00BD3328 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0368596CB2AA46A89BCDDE12 /* Pods-digamosunmercedez.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 55773242R5;
@@ -284,6 +366,7 @@
 		};
 		13892A8C1F422EEE00BD3328 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D364AD24312F7832339795E /* Pods-digamosunmercedez.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 55773242R5;

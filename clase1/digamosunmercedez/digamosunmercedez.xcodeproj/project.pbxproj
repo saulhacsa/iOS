@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1319000B1F42649500AF8695 /* notas.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1319000A1F42649500AF8695 /* notas.rtf */; };
 		13892A7C1F422EEE00BD3328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13892A7B1F422EEE00BD3328 /* AppDelegate.swift */; };
 		13892A7E1F422EEE00BD3328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13892A7D1F422EEE00BD3328 /* ViewController.swift */; };
 		13892A811F422EEE00BD3328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13892A7F1F422EEE00BD3328 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1319000A1F42649500AF8695 /* notas.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = notas.rtf; sourceTree = "<group>"; };
 		13892A781F422EEE00BD3328 /* digamosunmercedez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = digamosunmercedez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13892A7B1F422EEE00BD3328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13892A7D1F422EEE00BD3328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				13892A841F422EEE00BD3328 /* LaunchScreen.storyboard */,
 				13892A871F422EEE00BD3328 /* Info.plist */,
 				13892A8D1F4231C100BD3328 /* images */,
+				1319000A1F42649500AF8695 /* notas.rtf */,
 			);
 			path = digamosunmercedez;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			files = (
 				13892A8E1F4231C100BD3328 /* images in Resources */,
 				13892A861F422EEE00BD3328 /* LaunchScreen.storyboard in Resources */,
+				1319000B1F42649500AF8695 /* notas.rtf in Resources */,
 				13892A831F422EEE00BD3328 /* Assets.xcassets in Resources */,
 				13892A811F422EEE00BD3328 /* Main.storyboard in Resources */,
 			);
@@ -306,6 +310,7 @@
 				13892A8C1F422EEE00BD3328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

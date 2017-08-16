@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageControlManual" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gkH-gj-kv1">
+                                <rect key="frame" x="168" y="566" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094997027129999995" green="0.34306561390000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gkH-gj-kv1" secondAttribute="bottom" constant="64" id="Soi-kU-OYJ"/>
+                            <constraint firstItem="gkH-gj-kv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YQT-xh-GIM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.80000000000001" y="17.541229385307346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xhm-wn-6u3">
+            <objects>
+                <viewController id="uOY-2Z-Ial" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IpS-xD-ByX"/>
+                        <viewControllerLayoutGuide type="bottom" id="u5A-cz-Rqw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rrh-Ki-7tb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.48195930069999998" green="0.74649032360000001" blue="0.27145871310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWa-Qc-dmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="883"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7b7-iU-4ak">
+            <objects>
+                <viewController id="1ao-tl-Uqo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Oj-CP-zLi"/>
+                        <viewControllerLayoutGuide type="bottom" id="fLQ-SW-k7s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tbf-vx-kH0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.74649032360000001" green="0.0" blue="0.020960009030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7e7-p4-Mau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225" y="734"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="22W-H0-48F">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fei-sI-mhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="wdN-q2-Ji9" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="YyU-Ya-NMs"/>
+                        <segue destination="1ao-tl-Uqo" kind="show" id="cpl-0i-17T"/>
+                        <segue destination="uOY-2Z-Ial" kind="show" id="iVg-nd-CDx"/>
+                    </connections>
+                </pageViewController>
+            </objects>
+            <point key="canvasLocation" x="-654" y="139"/>
+        </scene>
+    </scenes>
+</document>

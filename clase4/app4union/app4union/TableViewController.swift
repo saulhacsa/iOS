@@ -10,6 +10,8 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    var palabrastabla:[String] = ["Lunes","Mazda","Sega"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,23 +31,46 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return palabrastabla.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celda", for: indexPath)
+        
         // Configure the cell...
-
+        
+        cell.textLabel?.text = palabrastabla[indexPath.row]
+        
         return cell
     }
-    */
+    
+    @IBAction func agregarPalabras(_ sender: Any) {
+        let alerta = UIAlertController(title: "Agregar", message: "Agrega palabra nueva", preferredStyle: .alert)
+        
+        let guardar = UIAlertAction(title: "Agregar", style: .default, handler: {
+            (action:UIAlertAction) -> Void in
+            let textField = alerta.textFields!.first
+            self.palabrastabla.append(textField!.text!)
+            self.tableView.reloadData()
+        })
+        
+        let cancelar = UIAlertAction(title: "Cancelar", style: .default)
+        {(action: UIAlertAction) -> Void in }
+        
+        alerta.addTextField {(UITextField:UITextField) -> Void in}
+        
+        alerta.addAction(guardar)
+        alerta.addAction(cancelar)
+        
+        present(alerta, animated: true, completion: nil)
+        
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

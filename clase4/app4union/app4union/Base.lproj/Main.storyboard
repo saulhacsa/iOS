@@ -65,47 +65,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BK3-lP-vNo">
-                                <rect key="frame" x="42" y="40" width="97" height="30"/>
+                                <rect key="frame" x="42" y="98" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6g-Xn-aCA">
-                                <rect key="frame" x="42" y="119" width="97" height="30"/>
+                                <rect key="frame" x="42" y="177" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT1-OQ-udI">
-                                <rect key="frame" x="163" y="20" width="30" height="30"/>
+                                <rect key="frame" x="163" y="78" width="30" height="30"/>
                                 <state key="normal" title="+"/>
                                 <connections>
                                     <action selector="suma:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uM1-pc-bWm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vty-Yr-IbG">
-                                <rect key="frame" x="163" y="65" width="30" height="30"/>
+                                <rect key="frame" x="163" y="123" width="30" height="30"/>
                                 <state key="normal" title="-"/>
                                 <connections>
                                     <action selector="resta:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="b7C-4g-kiN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-lA-UZV">
-                                <rect key="frame" x="163" y="103" width="30" height="30"/>
+                                <rect key="frame" x="163" y="161" width="30" height="30"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="mult:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qlk-bw-0OQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-4v-eNo">
-                                <rect key="frame" x="163" y="148" width="30" height="30"/>
+                                <rect key="frame" x="163" y="206" width="30" height="30"/>
                                 <state key="normal" title="/"/>
                                 <connections>
                                     <action selector="div:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="a66-hq-QBS"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="result" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVC-x3-fq2">
-                                <rect key="frame" x="235" y="78" width="97" height="30"/>
+                                <rect key="frame" x="235" y="136" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -117,19 +117,19 @@
                             <constraint firstItem="vty-Yr-IbG" firstAttribute="top" secondItem="BT1-OQ-udI" secondAttribute="bottom" constant="15" id="6aN-0T-eER"/>
                             <constraint firstItem="T6g-Xn-aCA" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="97:667" id="8Nf-5X-Usr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dVC-x3-fq2" secondAttribute="trailing" constant="27" id="FKp-bc-cnm"/>
-                            <constraint firstItem="dVC-x3-fq2" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="58" id="FoR-Kh-GT1"/>
                             <constraint firstItem="dVC-x3-fq2" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="97:667" id="HXw-2t-0no"/>
                             <constraint firstItem="BK3-lP-vNo" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="26" id="I5Z-xt-WqG"/>
-                            <constraint firstItem="BT1-OQ-udI" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Jxu-80-HXE"/>
                             <constraint firstItem="T6g-Xn-aCA" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="26" id="LEC-M9-e6j"/>
                             <constraint firstItem="BK3-lP-vNo" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="97:667" id="ZTP-yh-sLm"/>
                             <constraint firstItem="aLX-4v-eNo" firstAttribute="top" secondItem="7ux-lA-UZV" secondAttribute="bottom" constant="15" id="c0Z-1E-6EP"/>
                             <constraint firstItem="aLX-4v-eNo" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="eWg-xb-95Q"/>
                             <constraint firstItem="T6g-Xn-aCA" firstAttribute="top" secondItem="BK3-lP-vNo" secondAttribute="bottom" constant="49" id="evg-tT-aQB"/>
+                            <constraint firstItem="dVC-x3-fq2" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="116" id="fky-7i-16S"/>
                             <constraint firstItem="BT1-OQ-udI" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="kx7-Qd-ABM"/>
+                            <constraint firstItem="BT1-OQ-udI" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="58" id="l6J-An-DV3"/>
                             <constraint firstItem="7ux-lA-UZV" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="lAO-Sb-Isx"/>
+                            <constraint firstItem="BK3-lP-vNo" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="78" id="lLw-WC-LMY"/>
                             <constraint firstItem="7ux-lA-UZV" firstAttribute="top" secondItem="vty-Yr-IbG" secondAttribute="bottom" constant="8" id="m2U-Qz-ibM"/>
-                            <constraint firstItem="BK3-lP-vNo" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="x7f-km-db5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="calculadora" image="second" id="cPa-gy-q4n"/>
@@ -223,7 +223,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BNV-MW-38F" id="i8h-c6-sSY">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

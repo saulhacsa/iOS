@@ -35,6 +35,8 @@ class FirstViewController: UIViewController {
         musica.volume = 0
         musica.numberOfLoops = -1
         musica.play()
+        
+        self.hidekeyboard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,5 +45,18 @@ class FirstViewController: UIViewController {
     }
 
 
+}
+
+extension UIViewController{
+    
+    func hidekeyboard(){
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard(){
+        view.endEditing(true)
+    }
+    
 }
 

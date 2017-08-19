@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
+    
+    var managedObjects: [NSManagedObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let managedContext = appDelegate!.persistentContainer.viewContext
+        
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Lista")
+        
+        do{
+            managedObjects = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print ("No se recuperaron los datos guardados. Error : \(error), \(error.userInfo)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,13 +39,69 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return managedObjects.count
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        // Configure the cell...
+        
+        let managedObject = managedObjects[indexPath.row]
+        cell.textLabel?.text = managedObject.value(forKey: "palabras") as? String
+        
+        return cell
+    }
+    
+    @IBAction func agregarPalabras(_ sender: Any) {
+        
+        let alerta2 = UIAlertController(title: "Agregar", message: "Agrega palabra nueva", preferredStyle: .alert)
+        
+        let guardar = UIAlertAction(title: "Agregar", style: .default, handler: {
+            (action:UIAlertAction) -> Void in
+            let textField = alerta2.textFields!.first
+            self.guardarPalabra(palabra: textField!.text!)
+            self.tableView.reloadData()
+        })
+        
+        let cancelar = UIAlertAction(title: "Cancelar", style: .default)
+        {(action: UIAlertAction) -> Void in }
+        
+        alerta2.addTextField {(UITextField:UITextField) -> Void in}
+        
+        alerta2.addAction(guardar)
+        alerta2.addAction(cancelar)
+        
+        present(alerta2, animated: true, completion: nil)
+        
+    }
+    
+    func guardarPalabra(palabra: String){
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let managedeContext = appDelegate!.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Lista", in: managedeContext)!
+        
+        //  let managedObject = NSManagedObject(entity: entity, insertInto: managedeContext)
+        let managedObject = NSManagedObject(entity: entity, insertInto: managedeContext)
+        
+        managedObject.setValue(palabra, forKeyPath: "palabras")
+        
+        do{
+            try managedeContext.save()
+            managedObjects.append(managedObject)
+        } catch let error as NSError {
+            print ("No se pudo guardar, error: \(error), \(error.userInfo)")
+        }
+    }
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -71,14 +71,36 @@
             <point key="canvasLocation" x="-1287.2" y="754.27286356821594"/>
         </scene>
         <!--push-->
-        <scene sceneID="wg7-f3-ORb">
+        <scene sceneID="ep9-jI-yvs">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="app6final" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="push" image="second" id="cPa-gy-q4n"/>
+                <viewController id="opr-1N-4FF" customClass="SecondViewController" customModule="app6final" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A2f-am-h1I"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0U-N3-0Co"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J50-21-fN2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7IQ-ls-Enz">
+                                <rect key="frame" x="124" y="318" width="126" height="30"/>
+                                <state key="normal" title="Enviar notificación"/>
+                                <connections>
+                                    <action selector="enviarNotificacion:" destination="opr-1N-4FF" eventType="touchUpInside" id="ryT-iM-Bsf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7IQ-ls-Enz" firstAttribute="centerX" secondItem="J50-21-fN2" secondAttribute="centerX" id="4ui-XV-8UB"/>
+                            <constraint firstItem="7IQ-ls-Enz" firstAttribute="centerY" secondItem="J50-21-fN2" secondAttribute="centerY" id="IJh-Wp-pfQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="push" image="second" id="aU6-Mr-goL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHD-9A-ZcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="753"/>
+            <point key="canvasLocation" x="2308" y="753.37331334332839"/>
         </scene>
         <!--camara-->
         <scene sceneID="I1m-Qg-ePG">
@@ -130,9 +152,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAW-sb-C1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="552.79999999999995" y="753.37331334332839"/>
+            <point key="canvasLocation" x="1492" y="753.37331334332839"/>
         </scene>
-        <!--tableview-->
+        <!--Lista-->
         <scene sceneID="fbR-43-vj2">
             <objects>
                 <tableViewController id="1ux-r0-5Ne" customClass="TableViewController" customModule="app6final" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kPF-me-Qel">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="kPF-me-Qel">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kPF-me-Qel" id="msI-DL-WhJ">
@@ -155,11 +177,22 @@
                             <outlet property="delegate" destination="1ux-r0-5Ne" id="GEL-PH-B6j"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="tableview" id="Mc5-qX-6PS"/>
+                    <navigationItem key="navigationItem" title="Lista" id="hAd-hH-gSE">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="YdQ-pL-ifq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LJ3-0y-fxS">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agregar"/>
+                                <connections>
+                                    <action selector="agregarPalabras:" destination="1ux-r0-5Ne" eventType="touchUpInside" id="7IK-I9-6qj"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muL-HO-0u1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452" y="754"/>
+            <point key="canvasLocation" x="487.19999999999999" y="753.37331334332839"/>
         </scene>
         <!--Java View Controller-->
         <scene sceneID="P2H-71-1B5">
@@ -209,14 +242,33 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="1ux-r0-5Ne" kind="relationship" relationship="viewControllers" id="bbK-9p-VEr"/>
+                        <segue destination="6at-ef-lzY" kind="relationship" relationship="viewControllers" id="bbK-9p-VEr"/>
                         <segue destination="y8b-ly-rNQ" kind="relationship" relationship="viewControllers" id="AH6-He-qCU"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="Jsf-2H-vyx"/>
+                        <segue destination="opr-1N-4FF" kind="relationship" relationship="viewControllers" id="U8z-YL-96f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--tableview-->
+        <scene sceneID="bSg-gy-r7A">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6at-ef-lzY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="tableview" image="second" id="Mc5-qX-6PS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uub-Xc-4kx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ux-r0-5Ne" kind="relationship" relationship="rootViewController" id="rQh-9r-uXD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4U-PW-fkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="753.37331334332839"/>
         </scene>
     </scenes>
     <resources>

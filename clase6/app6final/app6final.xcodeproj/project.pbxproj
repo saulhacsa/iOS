@@ -21,6 +21,9 @@
 		131041381F48B926004D29A3 /* javaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131041371F48B926004D29A3 /* javaViewController.swift */; };
 		1310413B1F48BACC004D29A3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1310413A1F48BACC004D29A3 /* CoreData.framework */; };
 		1310413D1F48BDE1004D29A3 /* 11 Liquid State.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1310413C1F48BDE1004D29A3 /* 11 Liquid State.mp3 */; };
+		131041401F48C27D004D29A3 /* listado.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1310413E1F48C27D004D29A3 /* listado.xcdatamodeld */; };
+		131041421F48C85B004D29A3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131041411F48C85B004D29A3 /* UserNotifications.framework */; };
+		131041461F48C8C3004D29A3 /* hulk.png in Resources */ = {isa = PBXBuildFile; fileRef = 131041451F48C8C2004D29A3 /* hulk.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		131041371F48B926004D29A3 /* javaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = javaViewController.swift; sourceTree = "<group>"; };
 		1310413A1F48BACC004D29A3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		1310413C1F48BDE1004D29A3 /* 11 Liquid State.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 Liquid State.mp3"; sourceTree = SOURCE_ROOT; };
+		1310413F1F48C27D004D29A3 /* listado.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = listado.xcdatamodel; sourceTree = "<group>"; };
+		131041411F48C85B004D29A3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		131041451F48C8C2004D29A3 /* hulk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hulk.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131041421F48C85B004D29A3 /* UserNotifications.framework in Frameworks */,
 				1310413B1F48BACC004D29A3 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +84,7 @@
 				131041171F48B74F004D29A3 /* AppDelegate.swift */,
 				131041191F48B74F004D29A3 /* FirstViewController.swift */,
 				1310411B1F48B74F004D29A3 /* SecondViewController.swift */,
+				1310413E1F48C27D004D29A3 /* listado.xcdatamodeld */,
 				131041371F48B926004D29A3 /* javaViewController.swift */,
 				1310412D1F48B7F3004D29A3 /* TableViewController.swift */,
 				1310412F1F48B81B004D29A3 /* camaraViewController.swift */,
@@ -85,6 +93,7 @@
 				131041221F48B74F004D29A3 /* LaunchScreen.storyboard */,
 				131041251F48B74F004D29A3 /* Info.plist */,
 				1310413C1F48BDE1004D29A3 /* 11 Liquid State.mp3 */,
+				131041451F48C8C2004D29A3 /* hulk.png */,
 				131041311F48B8CA004D29A3 /* css */,
 				131041321F48B8CA004D29A3 /* particulas.html */,
 				131041331F48B8CA004D29A3 /* scriptjs */,
@@ -95,6 +104,7 @@
 		131041391F48BACC004D29A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				131041411F48C85B004D29A3 /* UserNotifications.framework */,
 				1310413A1F48BACC004D29A3 /* CoreData.framework */,
 			);
 			name = Frameworks;
@@ -132,7 +142,7 @@
 				TargetAttributes = {
 					131041131F48B74F004D29A3 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 55773242R5;
+						DevelopmentTeam = 26MVNUVSGZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -167,6 +177,7 @@
 				131041211F48B74F004D29A3 /* Assets.xcassets in Resources */,
 				1310411F1F48B74F004D29A3 /* Main.storyboard in Resources */,
 				1310413D1F48BDE1004D29A3 /* 11 Liquid State.mp3 in Resources */,
+				131041461F48C8C3004D29A3 /* hulk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +192,7 @@
 				131041301F48B81B004D29A3 /* camaraViewController.swift in Sources */,
 				131041181F48B74F004D29A3 /* AppDelegate.swift in Sources */,
 				1310411A1F48B74F004D29A3 /* FirstViewController.swift in Sources */,
+				131041401F48C27D004D29A3 /* listado.xcdatamodeld in Sources */,
 				131041381F48B926004D29A3 /* javaViewController.swift in Sources */,
 				1310412E1F48B7F3004D29A3 /* TableViewController.swift in Sources */,
 			);
@@ -305,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 55773242R5;
+				DEVELOPMENT_TEAM = 26MVNUVSGZ;
 				INFOPLIST_FILE = app6final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mxcom.caliente.app6final;
@@ -318,7 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 55773242R5;
+				DEVELOPMENT_TEAM = 26MVNUVSGZ;
 				INFOPLIST_FILE = app6final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mxcom.caliente.app6final;
@@ -348,6 +360,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1310413E1F48C27D004D29A3 /* listado.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1310413F1F48C27D004D29A3 /* listado.xcdatamodel */,
+			);
+			currentVersion = 1310413F1F48C27D004D29A3 /* listado.xcdatamodel */;
+			path = listado.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1310410C1F48B74F004D29A3 /* Project object */;
 }
